@@ -1,13 +1,3 @@
-Aqui esta la primera version del proyecto, sobre el cual trabajaremos a partir de ahora
-
-
-
-
-
-
-
-
-
 ## Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)

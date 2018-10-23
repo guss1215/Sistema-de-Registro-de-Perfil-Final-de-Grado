@@ -17,7 +17,7 @@
         <li><a href="../about/">Mi Perfil de Grado</a></li>
         <li><a href="../contact/">Acerca de</a></li>
         <li class="dropdown">
-          <a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Usuario
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Usuario
             <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
           <li><a href="/registrar">Registrar</a></li>
