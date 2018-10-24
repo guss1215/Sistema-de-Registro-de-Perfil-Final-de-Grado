@@ -14,6 +14,11 @@ class CreatePerfilpfsTable extends Migration
     {
         Schema::create('perfilpfs', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('title', 255);
+            $table->text('content');
+            $table->string('slug')->nullable();
+            $table->tinyInteger('status')->default(1);
+            $table->integer('user_id')->nullable();
             $table->timestamps();
         });
     }

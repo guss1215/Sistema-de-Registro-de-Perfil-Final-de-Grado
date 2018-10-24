@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use App\Http\Requests\perfilpfFormRequest;
+use App\perfilpf;
+
 class perfilespfController extends Controller
 {
     /**
@@ -16,7 +19,8 @@ class perfilespfController extends Controller
      */
     public function index()
     {
-        //
+        $perfilespf = perfilpf::all();
+        return view('perfilespf.index', compact('perfilespf'));
     }
 
     /**
@@ -35,9 +39,18 @@ class perfilespfController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(perfilpfFormRequest $request)
     {
-        //
+        $slug = uniqid();
+        $perfilpf = new perfilpf(array(
+            'title' => $request->get('title'),
+            'content' => $request->get('content'),
+            'slug' => $slug
+            ));
+
+        $perfilpf->save();
+
+        return redirect('/contact')->with('status', 'Su perfil ha sido registrado. Su id única es: '.$slug);
     }
 
     /**

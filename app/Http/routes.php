@@ -15,6 +15,8 @@
 Route::get('/', 'PagesController@home');
 Route::get('/about', 'PagesController@about');
 Route::get('/contact', 'perfilespfController@create');
+Route::post('/contact', 'perfilespfController@store');
+Route::get('/perfilespf', 'perfilespfController@index');
 
 
 
