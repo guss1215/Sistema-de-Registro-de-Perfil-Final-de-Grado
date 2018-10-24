@@ -16,9 +16,7 @@
         <li class="active"><a href="/">Inicio</a></li>
         <li><a href="../about/">Mi Perfil de Grado</a></li>
         <li><a href="../contact/">Registrar Perfil</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Usuario
-            <span class="caret"></span></a>
+        <li><a href="../signin/">Sign in</a></li>
           <ul class="dropdown-menu" role="menu">
           <li><a href="/registrar">Registrar</a></li>
           <li><a href="/login">Login</a></li>

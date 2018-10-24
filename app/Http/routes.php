@@ -18,5 +18,6 @@ Route::get('/contact', 'perfilespfController@create');
 Route::post('/contact', 'perfilespfController@store');
 Route::get('/perfilespf', 'perfilespfController@index');
 
-
+Route::get('/signin', 'signinController@create');
+//Route::post('/signin', 'signinController@store');
 

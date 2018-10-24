@@ -24,9 +24,9 @@ class PagesController extends Controller
         return view('contact');
     }  
 
-    public function registrar()
+    public function signin()
     {
-        return view('registrar');
+        return view('signin');
     } 
 
     public function login()
